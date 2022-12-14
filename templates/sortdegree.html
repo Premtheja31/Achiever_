@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <center>
+        <h1>Sorted by Degree grades</h1>
+        <a href="{% url 'home' %}"><button class="btn btn-danger">got to home</button></a>
+        <table class="table align-middle mb-0 bg-white mt-5">
+            <thead class="bg-primary text-white">
+            <tr>
+                <th>Name</th>
+                <th>degree marks</th>
+                <th>Mobile</th>
+                <th>Mail</th>
+            </tr>
+            </thead>
+            {% for i in R %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.degree_marks}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.mail}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+
+
+
+
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        .a
+        {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    <center>
+        <h1>This is home page</h1>
+        <a href="{% url 'sort10' %}"><button class="btn btn-danger">Sort by 10th grades</button></a>
+        <a href="{% url 'sortInter' %}"><button class="btn btn-danger">Sort by inter marks</button></a>
+        <a href="{% url 'sortdegree' %}"><button class="btn btn-danger">Sort by degree grades</button></a>
+        <table class="table align-middle mb-0 bg-white mt-5">
+            <thead class="bg-primary text-white">
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Mail</th>
+                <th>10th marks</th>
+                <th>12th marks</th>
+                <th>Graduation</th>
+                <th>Skills</th>
+                <th>Work Experience</th>
+
+            </tr>
+            </thead>
+            {% for i in R %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.mail}}</td>
+                <td>{{i.tenth_marks}}</td>
+                <td>{{i.inter_marks}}</td>
+                <td>{{i.degree_marks}}</td>
+                <td>{{i.skills}}</td>
+                <td>{{i.work_experience}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+     -->
+     <button type="button" class="btn btn-primary a" >Primary</button>
+    <button type="button" class="btn btn-secondary a">Secondary</button>
+    <button type="button" class="btn btn-success a">Success</button>
+    <button type="button" class="btn btn-danger a">Danger</button>
+    <button type="button" class="btn btn-warning a">Warning</button>
+    <button type="button" class="btn btn-info a">Info</button>
+    <button type="button" class="btn btn-light a">Light</button>
+    <button type="button" class="btn btn-dark a">Dark</button>
+    <button type="button" class="btn btn-link a">Link</button>
+
+
+
+
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
